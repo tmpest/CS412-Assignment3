@@ -1,0 +1,20 @@
+CS 412: Introduction to Data Mining
+Assignment 3: Classification Framework
+
+December 5, 2012
+
+The purpose behind the assignment was to develop a classification program that 
+can take in two arguments. The first argument is a file that was the classifier
+trainer. The second argument is the file to run the classifier upon. The files 
+were show a tuple in the following format:
+1. the first element is always a +1 or a -1 (including the sign) indicating 
+whether or not he tuple has one of two out comes.
+2. the following elements are always seperated by a tab or "\t" chatacter
+3. the following elements are natural numbers representing discrete values for 
+the attributes they represent.
+
+The program will output 4 numbers indicating some statistical information:
+- True Positives
+- False Negatives
+- False Positives
+- True Negatives

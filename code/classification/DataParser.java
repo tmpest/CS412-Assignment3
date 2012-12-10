@@ -1,4 +1,4 @@
-package other_packages;
+package classification;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,8 +16,14 @@ public class DataParser {
 			String currentLine = dataReader.nextLine();
 			Scanner lineReader = new Scanner(currentLine);
 			
-			int givenClassification = lineReader.nextInt();
-			
+			String classifiedVal = lineReader.next();
+			int givenClassification;
+
+			if(classifiedVal.charAt(0) == '+')
+				givenClassification = 1;
+			else
+				givenClassification = -1;
+
 			ArrayList<Integer> attributes = new ArrayList<Integer>();
 			
 			while(lineReader.hasNextInt()) {

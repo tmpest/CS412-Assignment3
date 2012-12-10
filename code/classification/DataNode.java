@@ -1,4 +1,4 @@
-package other_packages;
+package classification;
 
 import java.util.ArrayList;
 
@@ -6,7 +6,7 @@ public class DataNode {
 
 	public final int givenClassification;
 	public final ArrayList<Integer> attributes;
-	public final int decidedClassification;
+	public int decidedClassification;
 	
 	public DataNode(int givenClassification, ArrayList<Integer> attributes) {
 		this.givenClassification = givenClassification;
